@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor LH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixas">
+    <div class="caixa-trevas">
+        <h1 class="h1-trevas">Traduza para Trevas</h1>
+        <textarea id="input-trevas" class="input-trevas" onkeydown="setTimeout(traduzirTrevas, 10)" rows="4" cols="40" spellcheck="false"></textarea>
+        <textarea id="resultado-trevas" class="resultado-trevas" rows="5" cols="23" spellcheck="false" disabled></textarea>
+    </div>
+    <div class="caixa-vugnaes">
+        <h1 class="h1-vugnaes">Traduza para Vugnaes</h1>
+        <textarea id="input-vugnaes" class="input-vugnaes" onkeydown="setTimeout(vugnaeficarFrase, 10)" rows="4" cols="40" spellcheck="false"></textarea>
+        <textarea id="resultado-vugnaes" class="resultado-vugnaes" onkeydown="setTimeout(desvugnaeficarFrase, 10)" rows="4" cols="40" spellcheck="false"></textarea>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
